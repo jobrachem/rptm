@@ -148,7 +148,7 @@ onion_coef <- function(log_increments, knots, shift = NULL) {
 #' @examples
 #' samples <- rrw1(1, p = 10)
 rrw1 <- function(n, p, sd = 1) {
-    samples <- rnorm(n * p) |> matrix(nrow = p)
+    samples <- stats::rnorm(n * p) |> matrix(nrow = p)
 
     L <- matrix(0, p, p)
     L[lower.tri(L, diag = TRUE)] <- 1
