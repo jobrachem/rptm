@@ -10,10 +10,10 @@ onion_coef(log_increments, knots, shift = NULL)
 \item{log_increments}{Unconstrained onion spline log increments.}
 
 \item{knots}{A list defining the knots for the onion spline, most easily
-created with [onion_knots()].}
+created with \code{\link[=onion_knots]{onion_knots()}}.}
 
 \item{shift}{Numeric scalar for normalizing the onion spline's slope. Most
-easily created with [onion_shift()]. If `NULL` (default), the shift is
+easily created with \code{\link[=onion_shift]{onion_shift()}}. If \code{NULL} (default), the shift is
 computed automatically to normalize the spline's average slope to one.}
 }
 \value{

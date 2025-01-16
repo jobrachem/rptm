@@ -11,13 +11,13 @@ equidistant_knots(x, p = 10, l = 3, extend_range_factor = 0.01)
 
 \item{p}{Desired number of parameters.}
 
-\item{l}{Order of the spline. Defaults to `l=3` for cubic splines.}
+\item{l}{Order of the spline. Defaults to \code{l=3} for cubic splines.}
 
-\item{extend_range_factor}{Slightly extends the range over `min(x)` and `max(x)`,
-by setting `xlow <- min(x) - (max(x) - min(x)) * extend_range_factor`}
+\item{extend_range_factor}{Slightly extends the range over \code{min(x)} and \code{max(x)},
+by setting \code{xlow <- min(x) - (max(x) - min(x)) * extend_range_factor}}
 }
 \value{
-Vector of knots. Includes the outer knots. Will be of length `p + l + 1`.
+Vector of knots. Includes the outer knots. Will be of length \code{p + l + 1}.
 }
 \description{
 Create equidistant knots.

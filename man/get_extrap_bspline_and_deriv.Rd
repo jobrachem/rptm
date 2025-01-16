@@ -13,20 +13,20 @@ get_extrap_bspline_and_deriv(
 }
 \arguments{
 \item{basis_and_deriv_fn}{A function that follows the signature of the
-function returned by [get_approx_basis_and_deriv_fun()].}
+function returned by \code{\link[=get_approx_basis_and_deriv_fun]{get_approx_basis_and_deriv_fun()}}.}
 
 \item{target_left, target_right}{Strings, indicating how to extrapolate for
-`x` outside the range supported by the spline's knots. Supported values:
-* `"identity"`: Extrapolates with the identity function.}
+\code{x} outside the range supported by the spline's knots. Supported values:
+* \code{"identity"}: Extrapolates with the identity function.}
 }
 \value{
-A function that takes to arguments: `x`, a numeric vector of values
-     at which to evaluate the spline, and `coef`, a numeric vector of spline
-     coefficients. `length(coef)` must equal the number of columns of the
-     basis matrix returned by `basis_and_deriv_fn`. The function returns a
-     list of two numeric vectors:
-     * `fx`: Numeric vector of spline evaluations.
-     * `fx_deriv`: Numeric vector of spline derivative evaluations.
+A function that takes to arguments: \code{x}, a numeric vector of values
+at which to evaluate the spline, and \code{coef}, a numeric vector of spline
+coefficients. \code{length(coef)} must equal the number of columns of the
+basis matrix returned by \code{basis_and_deriv_fn}. The function returns a
+list of two numeric vectors:
+* \code{fx}: Numeric vector of spline evaluations.
+* \code{fx_deriv}: Numeric vector of spline derivative evaluations.
 }
 \description{
 Generates a function to evaluate a B-spline and its derivative with

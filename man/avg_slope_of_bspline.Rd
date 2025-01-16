@@ -11,7 +11,7 @@ avg_slope_of_bspline(knots, coef, l = 3)
 
 \item{coef}{Vector of spline coefficients.}
 
-\item{l}{Order of the spline. The default is `l = 3` for a cubic spline.}
+\item{l}{Order of the spline. The default is \code{l = 3} for a cubic spline.}
 }
 \value{
 Average slope of the spline, a scalar.

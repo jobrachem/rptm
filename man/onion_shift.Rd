@@ -10,7 +10,7 @@ onion_shift(log_increments, knots)
 \item{log_increments}{Unconstrained onion spline log increments.}
 
 \item{knots}{A list defining the knots for the onion spline, most easily
-created with [onion_knots()].}
+created with \code{\link[=onion_knots]{onion_knots()}}.}
 }
 \value{
 A numeric scalar, the onion shift.

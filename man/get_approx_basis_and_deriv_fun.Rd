@@ -14,30 +14,31 @@ get_approx_basis_and_deriv_fun(knots, ngrid, postmultiply_by = NULL, order = 3)
 approximation grid should have. Higher numbers improve the accuracy of the
 approximation.}
 
-\item{postmultiply_by}{A numeric matrix with `p` rows, where `p` is the
+\item{postmultiply_by}{A numeric matrix with \code{p} rows, where \code{p} is the
 number of basis function evaluations, i.e. the number of columns of the
 basis matrix.}
 
 \item{order}{A non-negative integer, giving the order of the spline. For a
-cubic spline, we have `order=3`.}
+cubic spline, we have \code{order=3}.}
 }
 \value{
-A function that takes a single argument `x` (a numeric vector) and
-  returns a list with four named elements:
-
-* `basis`: Approximated numeric matrix of basis function evaluations
-* `basis_deriv`: Approximated numeric matrix of basis function derivative evaluations.
-* `min_knot`: The minimum of the grid used to create the bases.
-* `max_knot`: The maximum of the grid used to create the bases.
+A function that takes a single argument \code{x} (a numeric vector) and
+returns a list with four named elements:
+\itemize{
+\item \code{basis}: Approximated numeric matrix of basis function evaluations
+\item \code{basis_deriv}: Approximated numeric matrix of basis function derivative evaluations.
+\item \code{min_knot}: The minimum of the grid used to create the bases.
+\item \code{max_knot}: The maximum of the grid used to create the bases.
+}
 }
 \description{
 The functions work on a grid approximation, returning a linear interpolation
 between the basis evaluations at the two closest grid points.
 }
 \details{
-The approximation functions will return `NA` for `x` outside the range
-supported by the given knots, that is for those values `x` for which
-`x < knots[order + 1]` or `rev(knots)[order + 1] < x` holds.
+The approximation functions will return \code{NA} for \code{x} outside the range
+supported by the given knots, that is for those values \code{x} for which
+\code{x < knots[order + 1]} or \code{rev(knots)[order + 1] < x} holds.
 }
 \examples{
 knots <- equidistant_knots(c(-4, 4), p = 10)

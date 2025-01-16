@@ -14,7 +14,7 @@ rrw1(n, p, sd = 1)
 \item{sd}{The standard deviation of the random walk.}
 }
 \value{
-A numeric matrix of dimension `(n, p)`.
+A numeric matrix of dimension \verb{(n, p)}.
 }
 \description{
 Assumes the starting condition to be zero.

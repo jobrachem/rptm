@@ -13,8 +13,8 @@ onion_knots(a_inner, b_inner, p, extend_range_factor = 0)
 
 \item{p}{Desired number of parameters.}
 
-\item{extend_range_factor}{Slightly extends the range over `min(x)` and `max(x)`,
-by setting `xlow <- min(x) - (max(x) - min(x)) * extend_range_factor`}
+\item{extend_range_factor}{Slightly extends the range over \code{min(x)} and \code{max(x)},
+by setting \code{xlow <- min(x) - (max(x) - min(x)) * extend_range_factor}}
 }
 \value{
 List of attributes.
