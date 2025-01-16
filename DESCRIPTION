@@ -11,6 +11,7 @@ Authors@R: c(
   )
 Description: Provides basic functionality for penalized transformation models.
 License: MIT + file LICENSE
+Roxygen: list(markdown = TRUE)
 Encoding: UTF-8
 LazyData: true
 Suggests: 
